@@ -1,0 +1,14 @@
+@import "bootstrap";
+
+
+.div-central-navbar{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 95vw;
+}
+.links{
+  display: flex;
+  flex-direction: row;
+
+}
