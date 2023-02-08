@@ -1,0 +1,15 @@
+<div id="<%= dom_id gallery %>">
+  <p>
+    <strong>Name:</strong>
+    <%= gallery.name %>
+  </p>
+
+  <p>
+    <strong>Imagens:</strong>
+    <% if gallery.images.attached? %>
+      <% gallery.images.each do |image| %>
+        <%= image_tag image %>
+      <% end %>
+    <% end %>
+  </p>
+</div>

@@ -1,6 +1,6 @@
 <h1>Querido Diario</h1>
 <% if current_user %>
-  <h1>Bem vindo <%= current_user.email  %></h1>
+  <h1>Bem vindo <%= current_user.name  %> <%=current_user.age %></h1>
   <%= link_to "Sair", destroy_user_session_path, 'data-turbo-method': :delete  %>
 <% else %>
   <h1>Você está deslogada</h1>
